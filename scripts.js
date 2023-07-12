@@ -18,10 +18,28 @@ const blogData = [
 
 const blogContainer = document.getElementById('blogContainer');
 
+// Function to generate slug from blog title
+function generateSlug(title) {
+  return title.toLowerCase().replace(/\s+/g, '-');
+}
+
+// Function to navigate to the blog page with the selected blog slug
+function navigateToBlog(blog) {
+  const slug = generateSlug(blog.title);
+
+  // Store the selected blog data in localStorage to access it in blog.html
+  localStorage.setItem('selectedBlog', JSON.stringify(blog));
+
+  window.location.href = `blogs/blog.html?slug=${slug}`;
+}
+
 // Loop through the blog data and create HTML elements for each blog post
 blogData.forEach((blog) => {
   const blogCard = document.createElement('div');
   blogCard.className = 'blog-card';
+
+  // Add event listener to the blog card to navigate to the blog page on click
+  blogCard.addEventListener('click', () => navigateToBlog(blog));
 
   const blogTitle = document.createElement('h2');
   blogTitle.textContent = blog.title;
