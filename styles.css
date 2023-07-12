@@ -82,6 +82,10 @@ footer {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 600px) {
