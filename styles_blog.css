@@ -46,14 +46,16 @@ margin-bottom: 20px;
 padding: 20px;
 border-radius: 5px;
 width: 50vw;
+padding-bottom: 30px;
 }
 
 .blog-card h2 {
   font-size: 24px;
+  margin-top: -8px;
 }
 
 .blog-card p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 footer {
@@ -73,6 +75,32 @@ footer {
   margin-bottom: 0;
 }
 
-/* .blog-container {
-  
-} */
+.blog-description h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.blog-description h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.blog-description p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.blog-description ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 12px;
+}
+
+.blog-description li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
