@@ -14,7 +14,7 @@ function navigateToBlog(blog) {
   // Store the selected blog data in localStorage to access it in blog.html
   localStorage.setItem('selectedBlog', JSON.stringify(blog));
 
-  window.location.href = `blogs/blog-${slug}`;
+  window.location.href = `${slug}`;
 }
 
 // Loop through the blog data and create HTML elements for each blog post
