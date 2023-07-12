@@ -61,28 +61,28 @@ function navigateToBlog(blog) {
 }
 
 // Loop through the blog data and create HTML elements for each blog post
-blogData.forEach((blog) => {
-  const blogCard = document.createElement('div');
-  blogCard.className = 'blog-card';
+// blogData.forEach((blog) => {
+//   const blogCard = document.createElement('div');
+//   blogCard.className = 'blog-card';
 
-  // Add event listener to the blog card to navigate to the blog page on click
-  blogCard.addEventListener('click', () => navigateToBlog(blog));
+//   // Add event listener to the blog card to navigate to the blog page on click
+//   blogCard.addEventListener('click', () => navigateToBlog(blog));
 
-  const blogTitle = document.createElement('h2');
-  blogTitle.textContent = blog.title;
+//   const blogTitle = document.createElement('h2');
+//   blogTitle.textContent = blog.title;
 
-  const blogDate = document.createElement('p');
-  blogDate.textContent = 'Published Date: ' + blog.date;
+//   const blogDate = document.createElement('p');
+//   blogDate.textContent = 'Published Date: ' + blog.date;
 
-  const blogDescription = document.createElement('p');
-  blogDescription.textContent = 'Description: ' + blog.description;
+//   const blogDescription = document.createElement('p');
+//   blogDescription.textContent = 'Description: ' + blog.description;
 
-  blogCard.appendChild(blogTitle);
-  blogCard.appendChild(blogDate);
-  blogCard.appendChild(blogDescription);
+//   blogCard.appendChild(blogTitle);
+//   blogCard.appendChild(blogDate);
+//   blogCard.appendChild(blogDescription);
 
-  blogContainer.appendChild(blogCard);
-});
+//   blogContainer.appendChild(blogCard);
+// });
 
 window.addEventListener('scroll', function() {
   var navbar = document.getElementById('navbar');
