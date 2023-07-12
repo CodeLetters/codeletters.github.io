@@ -1,67 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles_blog.css">
-</head>
-<body cz-shortcut-listen="true">
-  <div class="navbar" id="navbar">
-      <img src="/assets/img/logo_CodeLetters.png" alt="Logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles_blog.css" />
+  </head>
+  <body cz-shortcut-listen="true">
+    <a class="navbar" id="navbar" href="/">
+      <img src="/assets/img/logo_CodeLetters.png" alt="Logo" />
       <h1>Code Letters</h1>
-  </div>
+    </a>
 
-  <div class="blog-container" id="blogContent">
-    <div class="blog-card">
-      <p>Published Date: July 1, 2023</p>
-      <h2>GraphQL vs. REST: Choosing the Right API Architecture</h2>
-      <div class="blog-description">
-        <p>
-          When it comes to building modern web applications and services, choosing the right API architecture is crucial. Two popular options in the development community are GraphQL and REST. Both approaches have their strengths and weaknesses, and understanding their differences can help you make an informed decision on which one to use for your project.
-        </p>
-        <h3>RESTful APIs</h3>
-        <p>
-          Representational State Transfer (REST) has been the dominant API architecture for many years. RESTful APIs rely on a stateless, client-server communication model and are built around the principles of a resource-based approach. In a RESTful API, resources are exposed as URLs (Uniform Resource Locators), and clients interact with these resources using standard HTTP methods such as GET, POST, PUT, and DELETE.
-        </p>
-        <p>
-          REST APIs provide a clear separation between the client and server, making them highly scalable and cacheable. They are easy to understand and integrate with existing web technologies. REST also promotes a uniform interface, allowing clients to navigate the application state through hypermedia links.
-        </p>
-        <p>
-          However, REST APIs can suffer from over-fetching or under-fetching of data, leading to inefficient data transfers. They often require multiple round trips to the server to fetch related resources. The lack of flexibility in response structures can result in over-inclusion or under-inclusion of data, leading to increased network payloads.
-        </p>
-        <h3>GraphQL APIs</h3>
-        <p>
-          GraphQL is a query language for APIs that was developed by Facebook. Unlike REST, which focuses on exposing predefined resources, GraphQL allows clients to request the exact data they need and get a predictable response. With GraphQL, clients send queries to the server specifying the shape and structure of the desired data. The server then responds with a JSON payload matching the query.
-        </p>
-        <p>
-          One of the key advantages of GraphQL is its ability to reduce over-fetching and under-fetching of data. Clients can retrieve multiple resources in a single request, eliminating the need for multiple round trips to the server. Additionally, GraphQL provides a strong type system and introspection capabilities, making it easier for clients to understand and navigate the API.
-        </p>
-        <p>
-          However, implementing and maintaining a GraphQL server can be more complex compared to REST due to the need for schema definition and resolver functions. Caching can also be more challenging with GraphQL due to the dynamic nature of the queries. Furthermore, since GraphQL allows clients to specify the data they need, it may expose more data than intended if not implemented carefully.
-        </p>
-        <h3>Choosing the Right API Architecture</h3>
-        <p>
-          When choosing between GraphQL and REST, consider the specific requirements of your project. If you need a simple, well-established, and cacheable architecture that promotes resource-based interactions, REST may be the right choice. REST is a good fit for scenarios where you have a clear understanding of the resources, relationships, and expected responses.
-        </p>
-        <p>
-          On the other hand, if you prioritize flexibility, efficient data transfers, and the ability to retrieve only the required data, GraphQL may be a better fit. GraphQL is suitable for complex applications with varying data requirements, as it allows clients to query multiple resources in a single request and avoid over-fetching or under-fetching data.
-        </p>
-        <p>
-          Ultimately, the decision between GraphQL and REST depends on the specific needs of your project. It's also worth considering the expertise of your development team and the ecosystem and tooling available for each architecture. Both GraphQL and REST have proven to be effective solutions, and choosing the right one can greatly impact the success and scalability of your application.
-        </p>
+    <div class="blog-container" id="blogContent">
+      <div class="blog-card">
+        <p>Published Date: July 1, 2023</p>
+        <h2>GraphQL vs. REST: Choosing the Right API Architecture</h2>
+        <div class="blog-description">
+          <p>
+            When it comes to building modern web applications and services,
+            choosing the right API architecture is crucial. Two popular options
+            in the development community are GraphQL and REST. Both approaches
+            have their strengths and weaknesses, and understanding their
+            differences can help you make an informed decision on which one to
+            use for your project.
+          </p>
+          <h3>RESTful APIs</h3>
+          <p>
+            Representational State Transfer (REST) has been the dominant API
+            architecture for many years. RESTful APIs rely on a stateless,
+            client-server communication model and are built around the
+            principles of a resource-based approach. In a RESTful API, resources
+            are exposed as URLs (Uniform Resource Locators), and clients
+            interact with these resources using standard HTTP methods such as
+            GET, POST, PUT, and DELETE.
+          </p>
+          <p>
+            REST APIs provide a clear separation between the client and server,
+            making them highly scalable and cacheable. They are easy to
+            understand and integrate with existing web technologies. REST also
+            promotes a uniform interface, allowing clients to navigate the
+            application state through hypermedia links.
+          </p>
+          <p>
+            However, REST APIs can suffer from over-fetching or under-fetching
+            of data, leading to inefficient data transfers. They often require
+            multiple round trips to the server to fetch related resources. The
+            lack of flexibility in response structures can result in
+            over-inclusion or under-inclusion of data, leading to increased
+            network payloads.
+          </p>
+          <h3>GraphQL APIs</h3>
+          <p>
+            GraphQL is a query language for APIs that was developed by Facebook.
+            Unlike REST, which focuses on exposing predefined resources, GraphQL
+            allows clients to request the exact data they need and get a
+            predictable response. With GraphQL, clients send queries to the
+            server specifying the shape and structure of the desired data. The
+            server then responds with a JSON payload matching the query.
+          </p>
+          <p>
+            One of the key advantages of GraphQL is its ability to reduce
+            over-fetching and under-fetching of data. Clients can retrieve
+            multiple resources in a single request, eliminating the need for
+            multiple round trips to the server. Additionally, GraphQL provides a
+            strong type system and introspection capabilities, making it easier
+            for clients to understand and navigate the API.
+          </p>
+          <p>
+            However, implementing and maintaining a GraphQL server can be more
+            complex compared to REST due to the need for schema definition and
+            resolver functions. Caching can also be more challenging with
+            GraphQL due to the dynamic nature of the queries. Furthermore, since
+            GraphQL allows clients to specify the data they need, it may expose
+            more data than intended if not implemented carefully.
+          </p>
+          <h3>Choosing the Right API Architecture</h3>
+          <p>
+            When choosing between GraphQL and REST, consider the specific
+            requirements of your project. If you need a simple,
+            well-established, and cacheable architecture that promotes
+            resource-based interactions, REST may be the right choice. REST is a
+            good fit for scenarios where you have a clear understanding of the
+            resources, relationships, and expected responses.
+          </p>
+          <p>
+            On the other hand, if you prioritize flexibility, efficient data
+            transfers, and the ability to retrieve only the required data,
+            GraphQL may be a better fit. GraphQL is suitable for complex
+            applications with varying data requirements, as it allows clients to
+            query multiple resources in a single request and avoid over-fetching
+            or under-fetching data.
+          </p>
+          <p>
+            Ultimately, the decision between GraphQL and REST depends on the
+            specific needs of your project. It's also worth considering the
+            expertise of your development team and the ecosystem and tooling
+            available for each architecture. Both GraphQL and REST have proven
+            to be effective solutions, and choosing the right one can greatly
+            impact the success and scalability of your application.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <footer>
+    <footer>
       <p id="footer-text">© 2023 Code Letters. All rights reserved.</p>
-  </footer>
-  
-  <script type="module" src="scripts_blog.js"></script>
-</body>
-</html>
+    </footer>
 
+    <script type="module" src="scripts_blog.js"></script>
+  </body>
+</html>
 
 <!-- PROMT
 
