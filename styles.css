@@ -17,14 +17,12 @@ body {
 
 .navbar img {
   height: 75px;
-  margin-left: 10px;
   margin-top: 5px;
 }
 
 .navbar > h1 {
   color: #E3A72F;
   margin: 0;
-  margin-left: 10px;
   font-size: 20px;
   display: inline-block;
 }
@@ -38,8 +36,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin-top: -30px;
+  margin-top: 30px;
 }
 
 .blog-card {

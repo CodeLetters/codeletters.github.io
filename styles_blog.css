@@ -17,14 +17,12 @@ body {
 
 .navbar img {
   height: 75px;
-  margin-left: 10px;
   margin-top: 5px;
 }
 
 .navbar > h1 {
   color: #E3A72F;
   margin: 0;
-  margin-left: 10px;
   font-size: 20px;
   display: inline-block;
 }
@@ -36,9 +34,9 @@ body {
 .blog-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-top: 30px;
 }
 
 .blog-card {
@@ -61,8 +59,18 @@ width: 50vw;
 footer {
   background-color: #111111;
   color: #BEBEBE;
-  padding: 10px;
+  padding-top: 5px;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 20px;
+  font-size: 12px;
+}
+
+#footer-text {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* .blog-container {
