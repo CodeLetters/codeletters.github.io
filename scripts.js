@@ -1,47 +1,47 @@
-const blogData = [
-  {
-    id: '0',
-    title: 'The Power of TypeScript',
-    date: 'July 1, 2023',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
-  },
-  {
-    id: '1',
-    title: 'Blog Title 1',
-    date: 'July 1, 2023',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
-  },
-  {
-    id: '1',
-    title: 'Blog Title 1',
-    date: 'July 1, 2023',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
-  },
-  {
-    id: '1',
-    title: 'Blog Title 1',
-    date: 'July 1, 2023',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
-  },
-  {
-    id: '1',
-    title: 'Blog Title 1',
-    date: 'July 1, 2023',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
-  },
-  {
-    id: '2',
-    title: 'Blog Title 2',
-    date: 'July 5, 2023',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
-  },
-  {
-    id: '3',
-    title: 'Blog Title 3',
-    date: 'July 10, 2023',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
-  }
-];
+// const blogData = [
+//   {
+//     id: '0',
+//     title: 'The Power of TypeScript',
+//     date: 'July 1, 2023',
+//     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
+//   },
+//   {
+//     id: '1',
+//     title: 'Blog Title 1',
+//     date: 'July 1, 2023',
+//     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
+//   },
+//   {
+//     id: '1',
+//     title: 'Blog Title 1',
+//     date: 'July 1, 2023',
+//     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
+//   },
+//   {
+//     id: '1',
+//     title: 'Blog Title 1',
+//     date: 'July 1, 2023',
+//     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
+//   },
+//   {
+//     id: '1',
+//     title: 'Blog Title 1',
+//     date: 'July 1, 2023',
+//     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
+//   },
+//   {
+//     id: '2',
+//     title: 'Blog Title 2',
+//     date: 'July 5, 2023',
+//     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
+//   },
+//   {
+//     id: '3',
+//     title: 'Blog Title 3',
+//     date: 'July 10, 2023',
+//     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
+//   }
+// ];
 
 const blogContainer = document.getElementById('blogContainer');
 
