@@ -182,3 +182,10 @@ footer {
     transform: scale(0); /* Adjust the scale value to your preference */
   }
 }
+
+pre {
+  background-color: #111111;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 20px;
+}
