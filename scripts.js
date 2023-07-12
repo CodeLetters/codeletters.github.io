@@ -65,3 +65,15 @@ blogData.forEach((blog) => {
 
   blogContainer.appendChild(blogCard);
 });
+
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById('navbar');
+  const navbarHeight = navbar.offsetHeight;
+
+  if (window.scrollY >= navbarHeight) {
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove('sticky');
+  }
+});
+

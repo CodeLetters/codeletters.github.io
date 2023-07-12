@@ -104,3 +104,53 @@ footer {
   line-height: 1.5;
   margin-bottom: 6px;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar > h1 {
+    font-size: 16px;
+  }
+  
+  .blog-container {
+    margin-top: 20px;
+  }
+  
+  .blog-card {
+    width: 80vw;
+  }
+  
+  .blog-card h2 {
+    font-size: 20px;
+  }
+  
+  .blog-card p {
+    font-size: 12px;
+  }
+  
+  footer {
+    font-size: 10px;
+  }
+  
+  .blog-description h2 {
+    font-size: 20px;
+  }
+  
+  .blog-description h3 {
+    font-size: 16px;
+  }
+  
+  .blog-description p {
+    font-size: 14px;
+  }
+  
+  .blog-description li {
+    font-size: 14px;
+  }
+}
