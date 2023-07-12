@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles_blog.css" />
+  </head>
+  <body cz-shortcut-listen="true">
+    <div class="navbar" id="navbar">
+      <img src="/assets/img/logo_CodeLetters.png" alt="Logo" />
+      <h1>Code Letters</h1>
+    </div>
+
+    <div class="blog-container" id="blogContent">
+      <div class="blog-card">
+        <p>Published Date: July 1, 2023</p>
+        <h2>Building Real-time Applications with WebSockets and Socket.io</h2>
+        <div class="blog-description">
+          <h3>Introduction</h3>
+          <p>
+            Real-time applications have become increasingly popular in recent
+            years, allowing for instant communication and data updates between
+            clients and servers. WebSockets and Socket.io are powerful tools
+            that enable developers to build real-time applications easily and
+            efficiently.
+          </p>
+
+          <h3>WebSockets</h3>
+          <p>
+            WebSockets is a communication protocol that provides full-duplex
+            communication channels over a single TCP connection. Unlike
+            traditional HTTP requests, which follow a request-response pattern,
+            WebSockets allow for continuous bidirectional communication between
+            a client and a server.
+          </p>
+          <p>
+            With WebSockets, both the client and the server can send messages at
+            any time, and these messages are delivered in real-time. This makes
+            WebSockets ideal for applications that require instant updates, such
+            as chat applications, collaborative tools, or live dashboards.
+          </p>
+
+          <h3>Socket.io</h3>
+          <p>
+            Socket.io is a JavaScript library that simplifies the use of
+            WebSockets by providing a high-level API. It abstracts the
+            underlying WebSocket implementation and provides additional features
+            like automatic reconnection, event-based communication, and
+            room-based messaging.
+          </p>
+          <p>
+            Socket.io works seamlessly on both the client and server side,
+            making it easy to develop real-time applications using JavaScript,
+            regardless of whether you're using Node.js on the server or a web
+            browser on the client.
+          </p>
+
+          <h3>Getting Started with Socket.io</h3>
+          <p>
+            To use Socket.io, you need to include the Socket.io client library
+            on the client side and the Socket.io server library on the server
+            side. You can install Socket.io using npm:
+          </p>
+          <ul>
+            <li>
+              <pre><code>npm install socket.io</code></pre>     // for the server-side library
+            </li>
+            <li>
+              <pre><code>npm install socket.io-client</code></pre>     // for the client-side library
+            </li>
+          </ul>
+          <p>
+            Once installed, you can create a WebSocket connection between the
+            client and the server using Socket.io's <code>io()</code> function
+            on the client side, and <code>require('socket.io')</code> on the
+            server side.
+          </p>
+
+          <h3>Building Real-time Applications</h3>
+          <p>
+            With Socket.io, you can easily build real-time applications by
+            emitting and listening to events. Events can be defined on both the
+            client and server, allowing for bidirectional communication.
+          </p>
+          <p>
+            For example, on the server side, you can define an event to handle
+            incoming chat messages:
+          </p>
+          <pre><code>
+    const io = require('socket.io')(server);
+    
+    io.on('connection', (socket) => {
+      socket.on('chatMessage', (message) => {
+        // Handle the incoming message
+        console.log('Received message:', message);
+    
+        // Broadcast the message to all connected clients
+        io.emit('chatMessage', message);
+      });
+    });
+        </code></pre>
+          <p>On the client side, you can send a chat message to the server:</p>
+          <pre><code>
+    const socket = io();
+    
+    // Send a chat message to the server
+    socket.emit('chatMessage', 'Hello, World!');
+        </code></pre>
+          <p>
+            In this example, the server listens for the 'chatMessage' event and
+            broadcasts the message to all connected clients. The client sends a
+            'chatMessage' event to the server with the message 'Hello, World!'
+          </p>
+
+          <h3>Conclusion</h3>
+          <p>
+            WebSockets and Socket.io provide a powerful combination for building
+            real-time applications. With their bidirectional communication
+            capabilities and high-level API, developers can easily create
+            applications that require instant updates and real-time
+            interactions.
+          </p>
+          <p>
+            Whether you're building a chat application, a collaborative tool, or
+            a live dashboard, WebSockets and Socket.io are valuable tools to
+            have in your arsenal. They make it possible to create engaging and
+            dynamic applications that keep users connected and informed in
+            real-time.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p id="footer-text">© 2023 Code Letters. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="scripts_blog.js"></script>
+  </body>
+</html>
+
+<!-- PROMT
+
+Write an article for me on the topic:
+"Building Real-time Applications with WebSockets and Socket.io"
+Write in html block between this
+```
+<div class="blog-card">
+  <p>Published Date: July 1, 2023</p>
+  <h2>BLOG TITLE GOES HERE</h2>
+  <div class="blog-description">
+// Your Code goes here
+  </div>
+</div>
+```
+Use h2, h3, p ul and li tags without styling.
+
+WRITE CODE IN CODE BLOCK
+
+-->
