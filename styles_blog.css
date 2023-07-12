@@ -89,6 +89,14 @@ footer {
   font-size: 12px;
 }
 
+a {
+  text-decoration: none;
+}
+
+a > h1 {
+  text-decoration: none;
+}
+
 #footer-text {
   margin-top: 0;
   margin-bottom: 0;
