@@ -13,11 +13,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: left;
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out; /* Added transition property */
 }
 
 .navbar img {
   height: 75px;
   margin-top: 5px;
+  transition: transform 0.3s ease-in-out; /* Added transition property */
 }
 
 .navbar > h1 {
@@ -25,6 +28,22 @@ body {
   margin: 0;
   font-size: 20px;
   display: inline-block;
+  transition: transform 0.3s ease-in-out; /* Added transition property */
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transform: scaleY(0.8); /* Adjust the scale value to your preference */
+}
+
+.sticky img {
+  transform: scale(0.8); /* Adjust the scale value to your preference */
+}
+
+.sticky h1 {
+  transform: scale(0.8); /* Adjust the scale value to your preference */
 }
 
 .title {
@@ -74,6 +93,7 @@ footer {
   
   .navbar > h1 {
     font-size: 16px;
+    padding-left: 15px;
   }
   
   .blog-container {
@@ -82,5 +102,14 @@ footer {
   
   .blog-card {
     width: 80vw;
+  }
+
+  .sticky img {
+    transform: scale(0.9); /* Adjust the scale value to your preference */
+    margin-left: 90px
+  }
+
+  .sticky h1 {
+    transform: scale(0); /* Adjust the scale value to your preference */
   }
 }
