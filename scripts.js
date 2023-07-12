@@ -1,20 +1,4 @@
-const blogData = [
-  {
-    title: 'Blog Title 1',
-    date: 'July 1, 2023',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
-  },
-  {
-    title: 'Blog Title 2',
-    date: 'July 5, 2023',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
-  },
-  {
-    title: 'Blog Title 3',
-    date: 'July 10, 2023',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, metus in tincidunt fringilla, nisl nunc commodo nisi, in cursus ligula neque non arcu.'
-  }
-];
+import blogData from './blogData.js';
 
 const blogContainer = document.getElementById('blogContainer');
 
@@ -30,7 +14,7 @@ function navigateToBlog(blog) {
   // Store the selected blog data in localStorage to access it in blog.html
   localStorage.setItem('selectedBlog', JSON.stringify(blog));
 
-  window.location.href = `blogs/blog.html?slug=${slug}`;
+  window.location.href = `blogs/blog-${slug}`;
 }
 
 // Loop through the blog data and create HTML elements for each blog post
